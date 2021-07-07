@@ -3,9 +3,8 @@ import java.util.regex.Pattern;
 
     public class EmailRegex {
         public static void main(String[] args) {
-            String email = "abc";
-            String regex = "^[a-zA-Z0-9]+$";
-            //  String regex1 = "^[a-zA-Z]{1}[a-zA-Z0-9]*$";
+            String email = "abc@bridgelabz";
+              String regex = "^[a-zA-Z0-9]+@[a-zA-Z]+$";
 
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(email);
